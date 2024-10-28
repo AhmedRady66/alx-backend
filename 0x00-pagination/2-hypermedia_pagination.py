@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""File for Dict representation of data"""
 import csv
 import math
 from typing import List, Tuple, Dict, Any
