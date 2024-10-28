@@ -33,7 +33,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Return satrt and end page"""
-        assert type(page) == int and type(page_size) == int
+        assert type(page) is int and type(page_size) is int
         assert page > 0 and page_size > 0
         start_idx, end_idx = self.index_range(page, page_size)
         return self.dataset()[start_idx:end_idx]
